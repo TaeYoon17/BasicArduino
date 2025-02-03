@@ -16,21 +16,36 @@ Light eblink = {E_BLINK_RED, E_BLINK_BLUE , E_BLINK_YELLOW};
 Light ublink = {U_BLINK_RED, U_BLINK_BLUE ,U_BLINK_YELLOW};
 class Blink{
   private:
+    uint8_t sensor;
     uint8_t r,b,y;
   public:
-    Blink(uint8_t r,uint8_t b, uint8_t y):r(r),b(b),y(y) { }
+    Blink(uint8_t sensor,uint8_t r,uint8_t b, uint8_t y):sensor(sensor),r(r),b(b),y(y) {
+      pinMode(sensor,INPUT);
+      pinMode(r,OUTPUT);
+      pinMode(b,OUTPUT);
+      pinMode(y,OUTPUT);
+    }
 
     void turnRed(){
       digitalWrite(r,HIGH);
       digitalWrite(y,LOW);
       digitalWrite(b,LOW);
     }
-    void turnBlue(){ }
+    void turnBlue(){ 
+      digitalWrite(r,LOW);
+      digitalWrite(y,HIGH);
+      digitalWrite(b,LOW);
+    }
     void turnYellow() {
-
+      digitalWrite(r,LOW);
+      digitalWrite(y,HIGH);
+      digitalWrite(b,LOW);
     }
 };
+Blink rblink, lblink;
 void setPinMode(){
+  ublink = Blink(US, U_BLINK_RED, U_BLINK_BLUE, U_BLINK_YELLOW);
+  eblink = Blink(ES, E_BLINK_RED, E_BLINK_BLUE, E_BLINK_YELLOW);
   pinMode(E_BLINK_RED,OUTPUT);
   pinMode(E_BLINK_BLUE,OUTPUT);
   pinMode(E_BLINK_YELLOW,OUTPUT);
