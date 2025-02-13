@@ -1,0 +1,13 @@
+17:43:47 **** Incremental Build of configuration TriCore Debug (TASKING) for project task_scheduler ****
+amk -j12 all 
+TASKING VX-toolset for AURIX Development Studio (non-commercial): program builder v1.1r8 Build 22011964
+Invoking: Print Size
+elfsize  "task_scheduler.elf"
+Total sizes:
+ROM: 0x26d5 (9941) = code: 0x24e4 (9444) + romdata: 0x1f1 (497)
+RAM: 0x9555 (38229) = data + bss
+Finished building: task_scheduler.siz
+ 
+
+17:43:47 Build Finished. 0 errors, 0 warnings. (took 91ms)
+

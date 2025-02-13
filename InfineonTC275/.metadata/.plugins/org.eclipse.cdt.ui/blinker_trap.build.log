@@ -1,0 +1,13 @@
+16:41:31 **** Incremental Build of configuration TriCore Debug (TASKING) for project blinker_trap ****
+amk -j12 all 
+TASKING VX-toolset for AURIX Development Studio (non-commercial): program builder v1.1r8 Build 22011964
+Invoking: Print Size
+elfsize  "blinker_trap.elf"
+Total sizes:
+ROM: 0x28d5 (10453) = code: 0x26aa (9898) + romdata: 0x22b (555)
+RAM: 0x954f (38223) = data + bss
+Finished building: blinker_trap.siz
+ 
+
+16:41:31 Build Finished. 0 errors, 0 warnings. (took 97ms)
+

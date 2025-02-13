@@ -1,0 +1,17 @@
+LOADING	C:\Users\USER\Documents\BasicArduino\InfineonTC275\blinker_trap\TriCore Debug (TASKING)\blinker_trap.elf
+EMULATION	Probe - System; Root
+EMULATION	Initial debug frequency set
+EMULATION	Asserting reset
+EMULATION	Connected to SoC/core(s)
+EMULATION	Finished connecting to SoC
+EMULATION	Releasing reset
+EMULATION	Initialization script (if any) done
+No RAM which needs initialization found
+EMULATION	Final debug frequency set
+EMULATION	SoC ID match OK
+SoC	Detected device: TC270 series, rev. DC
+EMULATION	STARTED
+PROGRAMMING 	10453 bytes
+PROGRAMMING	Infineon TC27x_PFLASH_4MB (3 sectors)
+SoC	Detected device: TC270 series, rev. DC
+EMULATION	END - Not attempting cleanup

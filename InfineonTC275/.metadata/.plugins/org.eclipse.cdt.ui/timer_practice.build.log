@@ -1,4 +1,4 @@
-14:49:44 **** Incremental Build of configuration TriCore Debug (TASKING) for project timer_practice ****
+15:32:38 **** Incremental Build of configuration TriCore Debug (TASKING) for project timer_practice ****
 amk -j12 all 
 TASKING VX-toolset for AURIX Development Studio (non-commercial): program builder v1.1r8 Build 22011964
 Invoking: Print Size
@@ -9,5 +9,5 @@ RAM: 0x9546 (38214) = data + bss
 Finished building: timer_practice.siz
  
 
-14:49:44 Build Finished. 0 errors, 0 warnings. (took 101ms)
+15:32:39 Build Finished. 0 errors, 0 warnings. (took 110ms)
 
