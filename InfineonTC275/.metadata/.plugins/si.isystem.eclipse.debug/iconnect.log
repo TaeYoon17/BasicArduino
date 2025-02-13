@@ -1,0 +1,135 @@
+118  INFO  [main] Log5J : ***  120.2803  ***  **********************************************************
+118  INFO  [main] Log5J : ***  120.9396  ***  Logger configuration successful. Configuration file used: 
+118  INFO  [main] Log5J : ***  121.0281  ***  C:\Infineon\AURIX-Studio-1.10.6\configuration\org.eclipse.osgi\362\0\.cp\lib\log4j.properties
+118  INFO  [main] Log5J : ***  121.0885  ***  **********************************************************
+120  INFO  [main] ISysPluginConfiguration : ***  122.2772  ***  Loading debug plugin properties from 'C:\Infineon\AURIX-Studio-1.10.6\isys_debugger_configuration.json'
+596  INFO  [main] ISysPluginConfiguration : ***  598.4881  ***  Loaded plugin configuration:
+	 - Enable embedded: false
+	 - Enable portable false
+	 - Default selection: Custom
+	 - Default install path: '\winIDEA'
+614  INFO  [main] ISystemPreferences : ***  616.7256  ***  State location loaded at C:\Users\USER\Documents\BasicArduino\InfineonTC275\.metadata\.plugins\si.isystem.eclipse.debug
+615  INFO  [main] ISystemPreferences : ***  617.4116  ***  Preferences loaded: Install type: Custom, Custom path: '\winIDEA'
+622  INFO  [main] ISysDebugPlugin : ***  624.0877  ***  Starting Plugin si.isystem.eclipse.debug version 921.25900.179258.
+628  INFO  [main] ISysDebugPlugin : ***  630.2597  ***  Plugin si.isystem.eclipse.debug started.
+628  INFO  [main] ISysDebugPlugin : ***  630.4197  ***  winIDEA installation cancelled because embedded winIDEA is not allowed.
+628  INFO  [main] ISysDebugPlugin : ***  630.4772  ***  Plugin started: si.isystem.eclipse.debug
+11086 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  11089.2785  ***  ISysConnectionService initialization(super) started.
+11099 INFO  [si.isystem.eclipse.debug - 0] IConLaunchManager : ***  11101.7379  ***  
+Starting debug session using launch configuration paramenters: 
+ - Launch name = 'timer_practice TriCore Debug (TASKING)'
+ - Project name = 'timer_practice'
+ - Project path = 'C:/Users/USER/Documents/BasicArduino/InfineonTC275/timer_practice'
+ - Output file = 'TriCore Debug (TASKING)\timer_practice.elf'
+ - Stop on startup = 'true'
+ - Stop on startup location = 'core0_main'
+ - Verbose mode = false' - Invisible winIDEA = 'true'
+ - Bring winIDEA to top = 'true'
+ - Verify download = 'true'
+ - Analyze source files = 'false'
+ - Shutdown winIDEA at terminate session = 'true'
+ - Save winIDEA workspace = 'true'
+ - winIDEA workspace path = '.ads/winIDEAWorkspaces/TriCore-Debug-(TASKING)/ADS.xjrf'
+ - full winIDEA workspace path = 'C:\Users\USER\Documents\BasicArduino\InfineonTC275\timer_practice\.ads\winIDEAWorkspaces\TriCore-Debug-(TASKING)\ADS.xjrf'
+ - Device = 'TC275T'
+ - Hardware = 'IFX_DAS'
+ - Communication = 'USB'
+ - Hardware debugger = ''
+ - Image check = 'Default'
+ - Create SMP = 'true'
+
+13708 INFO  [si.isystem.eclipse.debug - 0] ISysSessionManager : ***  13710.5025  ***  Connecting to winIDEA 'C:\Infineon\AURIX-Studio-1.10.6\winIDEA\' with workspace 'N/A', winIDEA-ID: 'com.tasking.winIDEA.instance.id-timer_practice TriCore Debug (TASKING)', visible: false, CLI args: '/HideCrashDumpMessage /NOWSP'
+18951 INFO  [si.isystem.eclipse.debug - 0] ISysSessionManager : ***  18953.4609  ***  winIDEA workspace 'C:\Users\USER\Documents\BasicArduino\InfineonTC275\timer_practice\.ads\winIDEAWorkspaces\TriCore-Debug-(TASKING)\ADS.xjrf' created.
+19206 INFO  [si.isystem.eclipse.debug - 0] ISysSessionManager : ***  19208.7613  ***  Setting configuration to HW='IFX_DAS', Comm='USB', ImgCheck='Default'.
+19895 INFO  [si.isystem.eclipse.debug - 0] ISysConfigOptions : ***  19900.0154  ***  DAS Servers:
+19895 INFO  [si.isystem.eclipse.debug - 0] ISysConfigOptions : ***  19900.438  ***  [i] = 'IFX_DAS: DAS JTAG SHIELDBUDDY TC275 463DJPQ1 [USB]'
+19895 INFO  [si.isystem.eclipse.debug - 0] ISysConfigOptions : ***  19900.568  ***  Loading DAS Server list finished. [683ms]
+19942 INFO  [si.isystem.eclipse.debug - 0] ISysSessionManager : ***  19944.1387  ***  Connected to winIDEA and setup workspace.
+19942 INFO  [si.isystem.eclipse.debug - 0] ISysSessionManager : ***  19945.3558  ***  Version of isystem.connect for Java: 9.21.259.0
+19942 INFO  [si.isystem.eclipse.debug - 0] ISysSessionManager : ***  19945.7728  ***  Version of isystem.connect DLL: 9.21.259.0.0
+19944 INFO  [si.isystem.eclipse.debug - 0] ISysSessionManager : ***  19946.6561  ***  Version of winIDEA: 9.21.253
+19944 INFO  [si.isystem.eclipse.debug - 0] ISysSessionManager : ***  19946.8609  ***  Downloading ...
+21827 INFO  [si.isystem.eclipse.debug - 0] ISysSessionManager : ***  21829.6013  ***  Downloading finished.
+21827 DEBUG [si.isystem.eclipse.debug - 0] IConLaunchManager : ***  21829.83  ***  Deleting all breakpoints...
+21969 INFO  [si.isystem.eclipse.debug - 0] IConLaunchManager : ***  21972.4705  ***  Connected to target.
+21969 INFO  [si.isystem.eclipse.debug - 0] IConLaunchManager : ***  21972.6312  ***  Log level set to INFO
+22034 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22036.3322  ***  ISysConnectionService initialization(super) finished.
+22034 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22036.4998  ***  ISysConnectionService initialization(main) started.
+22034 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22036.7196  ***  ISysConnectionService initialization(main) finished.
+22034 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22036.8216  ***  ISysConnectionService initialization(sub) finished.
+22035 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22037.4585  ***  ISysCommandControl initialization(super) started.
+22038 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22040.589  ***  ISysCommandControl initialization(super) finished.
+22038 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22040.6982  ***  ISysCommandControl initialization(main) started.
+22038 INFO  [Worker-2: Command Executor Job] ISysAbstractDsfService : ***  22040.8655  ***  Command Executor Job started.
+22044 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22046.7535  ***  ISysCommandControl initialization(main) finished.
+22044 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22046.9232  ***  ISysCommandControl initialization(sub) finished.
+22052 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22054.852  ***  ISysRunControl initialization(super) started.
+22070 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22072.1528  ***  ISysRunControl initialization(super) finished.
+22070 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22072.3244  ***  ISysRunControl initialization(main) started.
+22072 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22074.3828  ***  ISysRunControl specified as service event listener (method: eventDispatched)
+22072 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22074.6401  ***  ISysRunControl initialization(main) finished.
+22082 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22083.9536  ***  ISysRunControl initialization(sub) finished.
+22083 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22085.0034  ***  ISysStackService initialization(super) started.
+22084 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22086.7327  ***  ISysStackService initialization(super) finished.
+22085 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22086.859  ***  ISysStackService initialization(main) started.
+22085 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22087.7444  ***  ISysStackService specified as service event listener (method: eventDispatched)
+22086 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22087.9114  ***  ISysStackService initialization(main) finished.
+22086 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22088.0071  ***  ISysStackService initialization(sub) finished.
+22086 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22088.5522  ***  ISysMemoryService initialization(super) started.
+22087 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22089.6526  ***  Starting Memory Service sub-initialization sequence.
+22087 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22089.7776  ***  ISysMemoryService initialization(super) finished.
+22087 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22089.822  ***  ISysMemoryService initialization(main) started.
+22088 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22090.1705  ***  ISysMemoryService specified as service event listener (method: eventDispatched)
+22088 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22090.2416  ***  ISysMemoryService initialization(main) finished.
+22088 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22090.3086  ***  Initializing Memory Service command cache.
+22088 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22090.4166  ***  Memory Service command cache initialized.
+22088 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22090.4689  ***  Initializing Memory Service block retrieval.
+22093 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22095.7404  ***  Memory Service block retrieval initialized.
+22093 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22095.9403  ***  Loading memory area properties.
+22099 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22101.2325  ***  Adding 1 memory blocks.
+22099 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22101.5944  ***  Block 'Virtual' [00000000:ffffffff] MAU=8 visible
+22099 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22101.7187  ***  Memory Service block retrieval initialized.
+22099 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22101.8112  ***  Registering memory model adapter and service.
+22100 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22102.2962  ***  Memory model adapter and service registered.
+22100 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22102.3945  ***  ISysMemoryService initialization(sub) finished.
+22100 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22102.9073  ***  ISysSourceLookupService initialization(super) started.
+22101 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22103.1964  ***  ISysSourceLookupService initialization(super) finished.
+22101 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22103.2533  ***  ISysSourceLookupService initialization(main) started.
+22101 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22103.3277  ***  ISysSourceLookupService initialization(main) finished.
+22101 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22103.3691  ***  ISysSourceLookupService initialization(sub) finished.
+22102 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22104.6473  ***  ISysExpressionsService initialization(super) started.
+22103 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22105.1326  ***  ISysExpressionsService initialization(super) finished.
+22103 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22105.2342  ***  ISysExpressionsService initialization(main) started.
+22104 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22106.166  ***  ISysExpressionsService specified as service event listener (method: eventDispatched)
+22104 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22106.2808  ***  ISysExpressionsService initialization(main) finished.
+22104 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22106.3798  ***  ISysExpressionsService initialization(sub) finished.
+22105 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22107.1818  ***  ISysRegistersService initialization(super) started.
+22106 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22108.2605  ***  ISysRegistersService initialization(super) finished.
+22106 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22108.385  ***  ISysRegistersService initialization(main) started.
+22107 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22109.3763  ***  ISysRegistersService specified as service event listener (method: eventDispatched)
+22107 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22109.5213  ***  ISysRegistersService initialization(main) finished.
+22107 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22109.6136  ***  ISysRegistersService initialization(sub) finished.
+22108 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22110.5632  ***  ISysDisassemblyService initialization(super) started.
+22109 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22111.6523  ***  ISysDisassemblyService initialization(super) finished.
+22109 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22111.8405  ***  ISysDisassemblyService initialization(main) started.
+22110 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22112.1002  ***  ISysDisassemblyService initialization(main) finished.
+22110 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22112.2165  ***  ISysDisassemblyService initialization(sub) finished.
+22110 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22112.8093  ***  ISysSfrService initialization(super) started.
+22111 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22113.5121  ***  ISysSfrService initialization(super) finished.
+22111 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22113.628  ***  ISysSfrService initialization(main) started.
+22112 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22114.1733  ***  ISysSfrService specified as service event listener (method: eventDispatched)
+22112 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22114.2585  ***  ISysSfrService initialization(main) finished.
+22382 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22384.1199  ***  ISysSfrService initialization(sub) finished.
+22383 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22384.8579  ***  ISysRteService initialization(super) started.
+22383 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22385.2545  ***  ISysRteService initialization(super) finished.
+22383 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22385.3254  ***  ISysRteService initialization(main) started.
+22384 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22385.6129  ***  ISysRteService specified as service event listener (method: eventDispatched)
+22384 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22385.6869  ***  ISysRteService initialization(main) finished.
+22384 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22385.7334  ***  ISysRteService initialization(sub) finished.
+22385 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22387.2332  ***  ISysBreakpointService initialization(super) started.
+22386 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22387.7537  ***  ISysBreakpointService initialization(super) finished.
+22386 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22387.8212  ***  ISysBreakpointService initialization(main) started.
+22386 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22388.3161  ***  ISysBreakpointService specified as service event listener (method: eventDispatched)
+22387 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22388.5066  ***  ISysBreakpointService initialization(main) finished.
+22387 INFO  [si.isystem.eclipse.debug - 0] ISysAbstractDsfService : ***  22388.5676  ***  ISysBreakpointService initialization(sub) finished.
+22390 INFO  [si.isystem.eclipse.debug - 0] ISysLaunch : ***  22392.2411  ***  Services initialization sequence completed
