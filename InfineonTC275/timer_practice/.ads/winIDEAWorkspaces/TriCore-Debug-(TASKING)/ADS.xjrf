@@ -584,7 +584,7 @@
      <Debug>
       <Processes>
        <__.0>
-        <URL>App/CPU0</URL>
+        <URL>App/SMP</URL>
        </__.0>
       </Processes>
      </Debug>

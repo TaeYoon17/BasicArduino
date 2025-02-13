@@ -74,3 +74,21 @@ Cpu0_Main.o :	"C:\\Users\\USER\\Documents\\BasicArduino\\InfineonTC275\\timer_pr
 "C:\\Users\\USER\\Documents\\BasicArduino\\InfineonTC275\\timer_practice\\Libraries\\Infra\\Sfr\\TC27D\\_Reg\IfxPort_regdef.h" :
 Cpu0_Main.o :	"C:\\Users\\USER\\Documents\\BasicArduino\\InfineonTC275\\timer_practice\\Libraries\\iLLD\\TC27D\\Tricore\\Scu\\Std\IfxScuWdt.h"
 "C:\\Users\\USER\\Documents\\BasicArduino\\InfineonTC275\\timer_practice\\Libraries\\iLLD\\TC27D\\Tricore\\Scu\\Std\IfxScuWdt.h" :
+Cpu0_Main.o :	"C:\\Users\\USER\\Documents\\BasicArduino\\InfineonTC275\\timer_practice\\Libraries\\iLLD\\TC27D\\Tricore\\Port\\Std\IfxPort.h"
+"C:\\Users\\USER\\Documents\\BasicArduino\\InfineonTC275\\timer_practice\\Libraries\\iLLD\\TC27D\\Tricore\\Port\\Std\IfxPort.h" :
+Cpu0_Main.o :	"C:\\Users\\USER\\Documents\\BasicArduino\\InfineonTC275\\timer_practice\\Libraries\\iLLD\\TC27D\\Tricore\\_PinMap\IfxPort_PinMap.h"
+"C:\\Users\\USER\\Documents\\BasicArduino\\InfineonTC275\\timer_practice\\Libraries\\iLLD\\TC27D\\Tricore\\_PinMap\IfxPort_PinMap.h" :
+Cpu0_Main.o :	"C:\\Users\\USER\\Documents\\BasicArduino\\InfineonTC275\\timer_practice\\Libraries\\iLLD\\TC27D\\Tricore\\Stm\\Std\IfxStm.h"
+"C:\\Users\\USER\\Documents\\BasicArduino\\InfineonTC275\\timer_practice\\Libraries\\iLLD\\TC27D\\Tricore\\Stm\\Std\IfxStm.h" :
+Cpu0_Main.o :	"C:\\Users\\USER\\Documents\\BasicArduino\\InfineonTC275\\timer_practice\\Libraries\\iLLD\\TC27D\\Tricore\_Impl\IfxStm_cfg.h"
+"C:\\Users\\USER\\Documents\\BasicArduino\\InfineonTC275\\timer_practice\\Libraries\\iLLD\\TC27D\\Tricore\_Impl\IfxStm_cfg.h" :
+Cpu0_Main.o :	"C:\\Users\\USER\\Documents\\BasicArduino\\InfineonTC275\\timer_practice\\Libraries\\iLLD\\TC27D\\Tricore\Src\Std\IfxSrc.h"
+"C:\\Users\\USER\\Documents\\BasicArduino\\InfineonTC275\\timer_practice\\Libraries\\iLLD\\TC27D\\Tricore\Src\Std\IfxSrc.h" :
+Cpu0_Main.o :	"C:\\Users\\USER\\Documents\\BasicArduino\\InfineonTC275\\timer_practice\\Libraries\\iLLD\\TC27D\\Tricore\_Impl\IfxSrc_cfg.h"
+"C:\\Users\\USER\\Documents\\BasicArduino\\InfineonTC275\\timer_practice\\Libraries\\iLLD\\TC27D\\Tricore\_Impl\IfxSrc_cfg.h" :
+Cpu0_Main.o :	"C:\\Users\\USER\\Documents\\BasicArduino\\InfineonTC275\\timer_practice\\Libraries\\Infra\\Sfr\\TC27D\\_Reg\IfxCbs_reg.h"
+"C:\\Users\\USER\\Documents\\BasicArduino\\InfineonTC275\\timer_practice\\Libraries\\Infra\\Sfr\\TC27D\\_Reg\IfxCbs_reg.h" :
+Cpu0_Main.o :	"C:\\Users\\USER\\Documents\\BasicArduino\\InfineonTC275\\timer_practice\\Libraries\\Infra\\Sfr\\TC27D\\_Reg\IfxCbs_regdef.h"
+"C:\\Users\\USER\\Documents\\BasicArduino\\InfineonTC275\\timer_practice\\Libraries\\Infra\\Sfr\\TC27D\\_Reg\IfxCbs_regdef.h" :
+Cpu0_Main.o :	"C:\\Users\\USER\\Documents\\BasicArduino\\InfineonTC275\\timer_practice\\Libraries\\iLLD\\TC27D\\Tricore\\Cpu\\Irq\IfxCpu_Irq.h"
+"C:\\Users\\USER\\Documents\\BasicArduino\\InfineonTC275\\timer_practice\\Libraries\\iLLD\\TC27D\\Tricore\\Cpu\\Irq\IfxCpu_Irq.h" :

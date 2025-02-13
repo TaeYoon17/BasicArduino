@@ -28,9 +28,31 @@
 #include "IfxCpu.h"
 #include "IfxScuWdt.h"
 
+#include "IfxPort.h"
+#include "IfxPort_PinMap.h"
+
+#include "IfxStm.h"
+#include "IfxCpu_Irq.h"
+
+typedef struct
+{
+    Ifx_STM             *stmSfr;            /**< \brief Pointer to Stm register base */
+    IfxStm_CompareConfig stmConfig;         /**< \brief Stm Configuration structure */
+    volatile uint8       LedBlink;          /**< \brief LED state variable */
+    volatile uint32      counter;           /**< \brief interrupt counter */
+} App_Stm;
+typedef enum {
+    RED_LIGHT = 0,
+    BLUE_LIGHT = 1,
+    YELLOW_LIGHT = 2
+}Blinker_State;
+App_Stm g_Stm; /**< \brief Stm global data */
+
 IfxCpu_syncEvent g_cpuSyncEvent = 0;
 
-void core0_main(void)
+void IfxStmDemo_init(void);
+
+int core0_main(void)
 {
     IfxCpu_enableInterrupts();
     
@@ -43,8 +65,82 @@ void core0_main(void)
     /* Wait for CPU sync event */
     IfxCpu_emitEvent(&g_cpuSyncEvent);
     IfxCpu_waitEvent(&g_cpuSyncEvent, 1);
-        
+
+    IfxStmDemo_init();
+
+    /*P00_5    Digital Output*/
+    IfxPort_setPinModeOutput(IfxPort_P10_2.port, IfxPort_P10_2.pinIndex, IfxPort_OutputMode_pushPull, IfxPort_OutputIdx_general);
+    IfxPort_setPinLow(IfxPort_P10_2.port, IfxPort_P10_2.pinIndex);
+
+    IfxPort_setPinModeOutput(IfxPort_P10_1.port, IfxPort_P10_1.pinIndex, IfxPort_OutputMode_pushPull, IfxPort_OutputIdx_general);
+    IfxPort_setPinHigh(IfxPort_P10_1.port, IfxPort_P10_1.pinIndex);
     while(1)
     {
+
     }
+    return (1);
+}
+
+IFX_INTERRUPT(STM_Int0Handler, 0, 100);
+
+void STM_Int0Handler(void)
+{
+    static Blinker_State state;
+    static int flag = 0;
+    static int cnt = 0;
+    IfxStm_clearCompareFlag(g_Stm.stmSfr, g_Stm.stmConfig.comparator);
+
+    switch(state){
+        case RED_LIGHT:
+            IfxStm_increaseCompare(g_Stm.stmSfr, g_Stm.stmConfig.comparator, 500000000u);
+            IfxPort_setPinHigh(IfxPort_P10_1.port, IfxPort_P10_1.pinIndex);
+            IfxPort_setPinLow(IfxPort_P10_2.port, IfxPort_P10_2.pinIndex);
+            state = BLUE_LIGHT;
+            break;
+        case BLUE_LIGHT:
+            IfxStm_increaseCompare(g_Stm.stmSfr, g_Stm.stmConfig.comparator, 500000000u);
+            IfxPort_setPinHigh(IfxPort_P10_2.port, IfxPort_P10_2.pinIndex);
+            IfxPort_setPinLow(IfxPort_P10_1.port, IfxPort_P10_1.pinIndex);
+            state = YELLOW_LIGHT;
+            break;
+        case YELLOW_LIGHT:
+            IfxStm_increaseCompare(g_Stm.stmSfr, g_Stm.stmConfig.comparator, 50000000u);
+            IfxPort_togglePin(IfxPort_P10_2.port,IfxPort_P10_2.pinIndex);
+            if((cnt=(++cnt%10))) state = YELLOW_LIGHT;
+            else state = RED_LIGHT;
+            break;
+    }
+//    if(flag == 0)
+//    {
+//        IfxPort_setPinLow(IfxPort_P10_2.port, IfxPort_P10_2.pinIndex);
+//        flag = 1;
+//    }
+//    else
+//    {
+//        IfxPort_setPinHigh(IfxPort_P10_2.port, IfxPort_P10_2.pinIndex);
+//        flag = 0;
+//    }
+
+    IfxCpu_enableInterrupts();
+}
+
+void IfxStmDemo_init(void)
+{
+    static Blinker_State state = RED_LIGHT;
+    /* disable interrupts */
+    boolean interruptState = IfxCpu_disableInterrupts();
+
+    IfxStm_enableOcdsSuspend(&MODULE_STM0);
+
+    g_Stm.stmSfr = &MODULE_STM0;
+    IfxStm_initCompareConfig(&g_Stm.stmConfig);
+
+    g_Stm.stmConfig.triggerPriority = 100u;
+    g_Stm.stmConfig.typeOfService   = IfxSrc_Tos_cpu0;
+    g_Stm.stmConfig.ticks           = 500000000;
+
+    IfxStm_initCompare(g_Stm.stmSfr, &g_Stm.stmConfig);
+
+    /* enable interrupts again */
+    IfxCpu_restoreInterrupts(interruptState);
 }

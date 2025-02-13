@@ -11,7 +11,7 @@ EMULATION	Final debug frequency set
 EMULATION	SoC ID match OK
 SoC	Detected device: TC270 series, rev. DC
 EMULATION	STARTED
-PROGRAMMING 	8423 bytes
+PROGRAMMING 	9947 bytes
 PROGRAMMING	Infineon TC27x_PFLASH_4MB (3 sectors)
 SoC	Detected device: TC270 series, rev. DC
-SoC	Detected device: TC270 series, rev. DC
+EMULATION	END - Not attempting cleanup
