@@ -1,0 +1,13 @@
+16:15:36 **** Incremental Build of configuration TriCore Debug (TASKING) for project PUZZER_PWM ****
+amk -j12 all 
+TASKING VX-toolset for AURIX Development Studio (non-commercial): program builder v1.1r8 Build 22011964
+Invoking: Print Size
+elfsize  "PUZZER_PWM.elf"
+Total sizes:
+ROM: 0x3b51 (15185) = code: 0x37f8 (14328) + romdata: 0x359 (857)
+RAM: 0x968d (38541) = data + bss
+Finished building: PUZZER_PWM.siz
+ 
+
+16:15:36 Build Finished. 0 errors, 0 warnings. (took 87ms)
+

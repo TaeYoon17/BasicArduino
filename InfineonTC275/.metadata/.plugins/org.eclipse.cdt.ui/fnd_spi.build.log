@@ -1,0 +1,13 @@
+17:43:55 **** Incremental Build of configuration TriCore Debug (TASKING) for project fnd_spi ****
+amk -j12 all 
+TASKING VX-toolset for AURIX Development Studio (non-commercial): program builder v1.1r8 Build 22011964
+Invoking: Print Size
+elfsize  "fnd_spi.elf"
+Total sizes:
+ROM: 0x2a50 (10832) = code: 0x280c (10252) + romdata: 0x244 (580)
+RAM: 0x9578 (38264) = data + bss
+Finished building: fnd_spi.siz
+ 
+
+17:43:55 Build Finished. 0 errors, 0 warnings. (took 95ms)
+

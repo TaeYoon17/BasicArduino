@@ -1,0 +1,4 @@
+14:30:34 **** Incremental Build of configuration TriCore Debug (TASKING) for project PWMwithADC ****
+amk -j12 all 
+TASKING VX-toolset for AURIX Development Studio (non-commercial): program builder v1.1r8 Build 22011964
+cctc -cs --dep-file="Modules/GTM_TOM_PWM/GTM_TOM_PWM.d" --misrac-version=2004 -D__CPU__=tc27xd "-fC:/Users/USER/Documents/BasicArduino/InfineonTC275/PWMwithADC/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Modules/GTM_TOM_PWM/GTM_TOM_PWM.src" "../Modules/GTM_TOM_PWM/GTM_TOM_PWM.c"

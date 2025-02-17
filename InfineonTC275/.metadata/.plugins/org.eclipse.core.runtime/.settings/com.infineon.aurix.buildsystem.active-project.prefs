@@ -1,3 +1,3 @@
-com.infineon.aurix.ActiveProject=task_scheduler
-com.infineon.aurix.Old_ActiveProject=blinker_trap
+com.infineon.aurix.ActiveProject=ADC_LightSensor
+com.infineon.aurix.Old_ActiveProject=fnd_spi
 eclipse.preferences.version=1

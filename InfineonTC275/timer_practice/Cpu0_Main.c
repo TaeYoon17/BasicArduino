@@ -86,7 +86,6 @@ int core0_main(void)
 }
 
 IFX_INTERRUPT(STM_Int0Handler, 0, 100);
-
 void STM_Int0Handler(void)
 {
     static Blinker_State state;

@@ -1,0 +1,13 @@
+11:44:16 **** Incremental Build of configuration Debug for project GTM_TOM_PWM_1_KIT_TC275_SB ****
+amk -j12 all 
+TASKING VX-toolset for AURIX Development Studio (non-commercial): program builder v1.1r8 Build 22011964
+Invoking: Print Size
+elfsize  "GTM_TOM_PWM_1_KIT_TC275_SB.elf"
+Total sizes:
+ROM: 0x269f (9887) = code: 0x24f6 (9462) + romdata: 0x1a9 (425)
+RAM: 0x84c9 (33993) = data + bss
+Finished building: GTM_TOM_PWM_1_KIT_TC275_SB.siz
+ 
+
+11:44:16 Build Finished. 0 errors, 0 warnings. (took 88ms)
+

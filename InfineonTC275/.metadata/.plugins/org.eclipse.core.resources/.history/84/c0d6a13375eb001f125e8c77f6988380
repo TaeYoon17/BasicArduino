@@ -1,0 +1,43 @@
+/*
+ * ERU_Switch.c
+ *
+ *  Created on: 2025. 2. 15.
+ *      Author: USER
+ */
+
+#include "ERU_Switch.h"
+void init_Switch1(unsigned int prior){
+    SCU_EICR1.U &= ~(0x7 << EICR_EXIS0);
+    SCU_EICR1.U |= (0x1 << EICR_EXIS0);
+
+    SCU_EICR1.U |= (0x1 << EICR_EIEN0);
+    SCU_EICR1.U |= (0x1 << EICR_FEN0);
+
+    SCU_EICR1.U &= ~(0x7 << EICR_INP0);
+
+    SCU_IGCR0.U &= ~(0x3 <<IGCR_IGP0);
+    SCU_IGCR0.U |= (0x1 <<IGCR_IGP0);
+
+    SRC_SCU_SCU_ERU0.U &= ~0xFF;
+    SRC_SCU_SCU_ERU0.U |= prior;
+    SRC_SCU_SCU_ERU0.U |= (0x1 << SRC_SRE);
+    SRC_SCU_SCU_ERU0.U &= ~(0x3 << SRC_TOS);
+}
+void init_Switch2(unsigned int prior){
+    SCU_EICR1.U &= ~(0x7 << EICR_EXIS1);
+    SCU_EICR1.U |= (0x2 << EICR_EXIS1);
+
+    SCU_EICR1.U |= (0x1 << EICR_EIEN1);
+    SCU_EICR1.U |= (0x1 << EICR_FEN1);
+
+    SCU_EICR1.U &= ~(0x7 << EICR_INP1);
+    SCU_EICR1.U |= (0X1<<EICR_INP1);
+
+    SCU_IGCR0.U &= ~(0x3 <<IGCR_IGP1);
+    SCU_IGCR0.U |= (0x1 <<IGCR_IGP1);
+
+    SRC_SCU_SCU_ERU1.U &= ~0xFF;
+    SRC_SCU_SCU_ERU1.U |= prior;
+    SRC_SCU_SCU_ERU1.U |= (0x1 << SRC_SRE);
+    SRC_SCU_SCU_ERU1.U &= ~(0x3 << SRC_TOS);
+}

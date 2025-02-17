@@ -1,0 +1,13 @@
+10:32:18 **** Incremental Build of configuration TriCore Debug (TASKING) for project Photoresistor ****
+amk -j12 all 
+TASKING VX-toolset for AURIX Development Studio (non-commercial): program builder v1.1r8 Build 22011964
+Invoking: Print Size
+elfsize  "Photoresistor.elf"
+Total sizes:
+ROM: 0x3723 (14115) = code: 0x33b0 (13232) + romdata: 0x373 (883)
+RAM: 0x969b (38555) = data + bss
+Finished building: Photoresistor.siz
+ 
+
+10:32:18 Build Finished. 0 errors, 0 warnings. (took 91ms)
+
