@@ -1,4 +1,4 @@
-17:43:47 **** Incremental Build of configuration TriCore Debug (TASKING) for project task_scheduler ****
+17:01:58 **** Build of configuration TriCore Debug (TASKING) for project task_scheduler ****
 amk -j12 all 
 TASKING VX-toolset for AURIX Development Studio (non-commercial): program builder v1.1r8 Build 22011964
 Invoking: Print Size
@@ -9,5 +9,5 @@ RAM: 0x9555 (38229) = data + bss
 Finished building: task_scheduler.siz
  
 
-17:43:47 Build Finished. 0 errors, 0 warnings. (took 91ms)
+17:01:58 Build Finished. 0 errors, 0 warnings. (took 88ms)
 

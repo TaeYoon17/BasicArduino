@@ -1,4 +1,4 @@
-10:16:34 **** Incremental Build of configuration TriCore Debug (TASKING) for project ADC_LightSensor ****
+17:01:25 **** Incremental Build of configuration TriCore Debug (TASKING) for project ADC_LightSensor ****
 amk -j12 all 
 TASKING VX-toolset for AURIX Development Studio (non-commercial): program builder v1.1r8 Build 22011964
 Invoking: Print Size
@@ -9,5 +9,5 @@ RAM: 0x9681 (38529) = data + bss
 Finished building: ADC_LightSensor.siz
  
 
-10:16:34 Build Finished. 0 errors, 0 warnings. (took 97ms)
+17:01:26 Build Finished. 0 errors, 0 warnings. (took 99ms)
 

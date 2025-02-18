@@ -1,0 +1,13 @@
+/*
+ * FNDSPI.c
+ *
+ *  Created on: 2025. 2. 17.
+ *      Author: USER
+ */
+
+
+
+
+#include "Ifx_Types.h"
+#include "IfxCpu.h"
+#include "IfxScuWdt.h"

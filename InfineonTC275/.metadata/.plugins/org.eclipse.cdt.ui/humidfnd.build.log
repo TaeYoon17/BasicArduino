@@ -1,0 +1,13 @@
+11:43:03 **** Incremental Build of configuration TriCore Debug (TASKING) for project humidfnd ****
+amk -j12 all 
+TASKING VX-toolset for AURIX Development Studio (non-commercial): program builder v1.1r8 Build 22011964
+Invoking: Print Size
+elfsize  "humidfnd.elf"
+Total sizes:
+ROM: 0x2b1a (11034) = code: 0x28c2 (10434) + romdata: 0x258 (600)
+RAM: 0x9574 (38260) = data + bss
+Finished building: humidfnd.siz
+ 
+
+11:43:03 Build Finished. 0 errors, 0 warnings. (took 98ms)
+

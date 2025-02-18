@@ -29,6 +29,7 @@ Configurations/Debug \
 Libraries/Infra/Platform/Tricore/Compilers \
 Libraries/Service/CpuGeneric/SysSe/Bsp \
 Libraries/iLLD/TC27D/Tricore/Cpu/CStart \
+Libraries/iLLD/TC27D/Tricore/Cpu/Irq \
 Libraries/iLLD/TC27D/Tricore/Cpu/Std \
 Libraries/iLLD/TC27D/Tricore/Cpu/Trap \
 Libraries/iLLD/TC27D/Tricore/Gtm/Std \

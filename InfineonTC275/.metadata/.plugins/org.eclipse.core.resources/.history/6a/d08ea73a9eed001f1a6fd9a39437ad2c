@@ -1,0 +1,28 @@
+/*
+ * Driver_DHT11.c
+ *
+ *  Created on: 2025. 2. 18.
+ *      Author: USER
+ */
+
+
+#include "Driver_DHT11.h"
+
+
+void DHT11_Start(){
+    IfxPort_setPinModeOutput(DHT11_PIN.port, DHT11_PIN.pinIndex, IfxPort_OutputMode_pushPull,IfxPort_OutputIdx_general);
+    IfxPort_setPinLow(DHT11_PIN.port, DHT11_PIN.pinIndex);
+    // wait for 18ms
+    IfxPort_setPinModeInput(DHT11_PIN.port, DHT11_PIN.pinIndex, IfxPort_InputMode_noPullDevice);
+}
+
+boolean DHT11_Check_Response(){
+
+}
+
+uint8_t DHT11_Read(){
+    uint8_t i,j,k;
+    for(j=0;j<8;j++){
+        while(!(IfxPort_getPinState(DHT11_PIN.port, DHT11_PIN.pinIndex)))
+    }
+}

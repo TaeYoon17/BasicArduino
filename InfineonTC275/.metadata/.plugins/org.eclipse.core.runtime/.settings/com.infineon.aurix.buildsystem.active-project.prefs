@@ -1,3 +1,3 @@
-com.infineon.aurix.ActiveProject=ADC_LightSensor
-com.infineon.aurix.Old_ActiveProject=fnd_spi
+com.infineon.aurix.ActiveProject=humidfnd
+com.infineon.aurix.Old_ActiveProject=PUZZER_PWM
 eclipse.preferences.version=1

@@ -28,8 +28,35 @@
 #include "IfxCpu.h"
 #include "IfxScuWdt.h"
 
+#include "IfxPort.h"
+#include "IfxPort_PinMap.h"
+
+
+#include "Driver_Adc.h"
+#include "Driver_Stm.h"
+#include "GTM_TOM_PWM.h"
+#include "FNDSPI.h"
+#include "DHT11.h"
+
+#include "Driver_DHT11.h"
+
+#include "Bsp.h"
+
+#define DHT11_UPDATE_TIME                   500000000
+
 IfxCpu_syncEvent g_cpuSyncEvent = 0;
 
+void AppScheduling(void);
+void AppTask1ms(void);
+void AppTask10ms(void);
+void AppTask100ms(void);
+void AppTask1000ms(void);
+
+void initGPIO();
+
+uint8 temp;
+uint8_t hum = 0;
+volatile int cnt = 0;
 void core0_main(void)
 {
     IfxCpu_enableInterrupts();
@@ -43,9 +70,68 @@ void core0_main(void)
     /* Wait for CPU sync event */
     IfxCpu_emitEvent(&g_cpuSyncEvent);
     IfxCpu_waitEvent(&g_cpuSyncEvent, 1);
-        
+    initFND();
+    initGPIO();
+    Driver_Stm_Init();
+//    DHT11_init_comm();
     while(1)
     {
-
+//        setFNDNumber(temp);
+        setFNDNumber(hum);
+        AppScheduling();
     }
 }
+
+void initGPIO(){
+    IfxPort_setPinModeOutput(IfxPort_P10_1.port, IfxPort_P10_1.pinIndex,IfxPort_OutputMode_pushPull,IfxPort_OutputIdx_general);
+    IfxPort_setPinModeOutput(IfxPort_P10_2.port, IfxPort_P10_2.pinIndex,IfxPort_OutputMode_pushPull,IfxPort_OutputIdx_general);
+    IfxPort_setPinLow(IfxPort_P10_1.port, IfxPort_P10_1.pinIndex);
+    IfxPort_setPinHigh(IfxPort_P10_2.port, IfxPort_P10_2.pinIndex);
+}
+
+void AppScheduling(void){
+    if(stSchedulingInfo.u8nuScheduling1msFlag){
+        stSchedulingInfo.u8nuScheduling1msFlag = 0u;
+        AppTask1ms();
+        if(stSchedulingInfo.u8nuScheduling10msFlag){
+            stSchedulingInfo.u8nuScheduling10msFlag = 0u;
+            AppTask10ms();
+
+            if(stSchedulingInfo.u8nuScheduling100msFlag){
+                stSchedulingInfo.u8nuScheduling100msFlag = 0u;
+                AppTask100ms();
+
+                if(stSchedulingInfo.u8nuScheduling1000msFlag){
+                    stSchedulingInfo.u8nuScheduling1000msFlag = 0u;
+                    AppTask1000ms();
+                }
+            }
+        }
+    }
+}
+
+void AppTask1ms(){ }
+void AppTask10ms(){
+}
+void AppTask100ms(){
+
+}
+int task1000msCount = 0;
+void AppTask1000ms(){
+    task1000msCount = (task1000msCount + 1) % 1000;
+//    DHT11_read_sensor();
+//    if(g_dht11_one_eye_data.data_valid){
+//        temp = g_dht11_one_eye_data.humidity;
+//    }
+    if(task1000msCount % 3 == 0){
+        DHT11_Start();
+        if(DHT11_Check_Response()){
+            hum = DHT11_Read();
+            DHT11_Read();
+            DHT11_Read();
+            DHT11_Read();
+            DHT11_Read();
+        }
+    }
+}
+

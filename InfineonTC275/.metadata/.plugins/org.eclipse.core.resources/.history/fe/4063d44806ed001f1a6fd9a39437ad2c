@@ -1,0 +1,22 @@
+/*
+ * FNDSPI.c
+ *
+ *  Created on: 2025. 2. 17.
+ *      Author: USER
+ */
+
+void send(unsigned char X){
+    for(int i = 8; i>=1; i--){
+        X & 0x80 ? IfxPort_setPinHigh(DIO.port, DIO.pinIndex) : IfxPort_setPinLow(DIO.port, DIO.pinIndex);
+        X <<= 1;
+        IfxPort_setPinLow(SCLK.port, SCLK.pinIndex);
+        IfxPort_setPinHigh(SCLK.port, SCLK.pinIndex);
+    }
+}
+
+void sendPort(unsigned char data,unsigned char port){
+    send(data);
+    send(port);
+    IfxPort_setPinLow(RCLK.port, RCLK.pinIndex);
+    IfxPort_setPinHigh(RCLK.port, RCLK.pinIndex);
+}
